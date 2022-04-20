@@ -29,3 +29,37 @@ header {
   border-radius: 2px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-heading {
+  color: #172B4D;
+  font-family: 'Poppins';
+  font-size: 40px;
+  line-height: 52px;
+  padding: 128px 24px 12px 24px;
+}
+.introductory-text {
+  color: #344563;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px 12px 24px;
+}
+.lets-connect {
+  color: #7F8CFF;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 24px;
+}
+.social-media-icons {
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
