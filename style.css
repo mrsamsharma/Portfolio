@@ -32,6 +32,8 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  background: url(/background.svg) no-repeat;
+  background-size: 100%;
 }
 
 .primary-heading {
@@ -63,3 +65,4 @@ main {
   justify-content: flex-start;
   gap: 20px;
 }
+
