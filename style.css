@@ -260,6 +260,12 @@ main {
   background-color: #f7f7f9;
   border-radius: 8px;
 }
+
 .solid {
   border: 1px solid #dfe1e6;
+}
+
+.category-spacing {
+  margin-top: 36px;
+  margin-bottom: 23px;
 }
