@@ -19,7 +19,7 @@
 
 - GitHub: [@samWfelcie](https://github.com/samWfelice)
 - Twitter: [@samwfelice](https://twitter.com/samwfelice)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samfelice/)
+- LinkedIn: [samfelice](https://www.linkedin.com/in/samfelice)
 
 
 ## 🤝 Contributing
