@@ -10,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://htmlpreview.github.io/?https://github.com/samWfelice/Portfolio/blob/work-about/index.html)
+[Live Demo Link](https://htmlpreview.github.io/?https://github.com/samWfelice/Portfolio/blob/main/index.html)
 
 
 ## Authors
