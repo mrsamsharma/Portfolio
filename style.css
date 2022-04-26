@@ -334,6 +334,7 @@ main {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  margin-bottom: 45px;
 }
 
 .form {
@@ -356,7 +357,7 @@ main {
 .form ul li input {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding: 15px;
+  padding: 12px 14px 12px 14px;
   color: #b3bac5;
   font-weight: 400;
   font-size: 15px;
@@ -382,7 +383,7 @@ main {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  padding: 12px 16px 12px 16px;
+  padding: 12px 14px 12px 14px;
   margin-bottom: 45px;
 }
 
