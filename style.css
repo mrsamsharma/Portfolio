@@ -299,3 +299,85 @@ main {
   margin-top: 26px;
   margin-bottom: 23px;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./images/contact-bck.svg');
+  background-repeat: no-repeat;
+  background-position: right 21px;
+  background-color: #6070ff;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-header h2 {
+  margin: 103px 24px 12px 24px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.contact-header p {
+  margin: 12px 24px 40px 24px;
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.form {
+  width: 80%;
+}
+
+.form ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.form ul li {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form ul li input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form ul li textarea {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-btn {
+  align-self: flex-start;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px 16px 12px 16px;
+}
