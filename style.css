@@ -5,6 +5,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .desktop-work {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+}
+
 body {
   background-color: #e5e5e5;
 }
@@ -124,7 +134,7 @@ main {
 }
 
 .card-paragraph {
-  color: 344563;
+  color: #344563;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -408,4 +418,262 @@ main {
   font-weight: 500;
   line-height: 24px;
   padding: 12px 16px 12px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  .desktop-nav ul li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  header {
+    padding: 25px 155px;
+  }
+
+  main {
+    background-image: url(./images/desktop-bck.svg);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 150px;
+    background-size: 98%;
+    background-position-x: 35px;
+    height: 100vh;
+  }
+
+  .primary-heading {
+    width: 42%;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 0;
+  }
+
+  .introductory-text {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0;
+  }
+
+  .lets-connect {
+    padding: 0;
+  }
+
+  .social-media-icons {
+    padding: 0;
+    padding-top: 4px;
+  }
+
+  .main-section {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-container {
+    display: none;
+  }
+
+  .desktop-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 142px;
+    align-items: center;
+    gap: 142px;
+  }
+
+  .desktop-card-item {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    width: 1300px;
+  }
+
+  .desktop-card-info {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    padding: 24px 22px 27px 22px;
+  }
+
+  .uber {
+    flex: 1;
+    width: 50%;
+    padding: 24px 22px 27px 22px;
+  }
+
+  .card-heading {
+    font-size: 40px;
+    line-height: 52px;
+    padding-left: 24px;
+  }
+
+  .canopy {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .gray-matter {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-list {
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-button {
+    margin-left: 24px;
+    margin-top: 40px;
+  }
+
+  .about-me-heading {
+    color: #091e42;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    width: 50%;
+  }
+
+  .about-me-content {
+    display: flex;
+    border-top-right-radius: 180px;
+  }
+
+  .about-me-column1 {
+    width: 25%;
+    margin-right: 37px;
+    margin-left: 142px;
+  }
+
+  .resume-btn {
+    margin-bottom: 132px;
+  }
+
+  .skills {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-top: 48px;
+    flex: 1;
+    margin-right: 142px;
+  }
+
+  .skill-text-style {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 36px;
+  }
+
+  .language-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .language-text {
+    color: #253858;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .skill-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 12px 40px 20px 12px;
+    width: 122px;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+  }
+
+  .solid {
+    border: 1px solid #dfe1e6;
+  }
+
+  .category-spacing {
+    margin-top: 26px;
+    margin-bottom: 23px;
+  }
+
+  .contact {
+    background-image: url('./images/contact-desktop-bck.svg');
+    background-size: 77%;
+    background-position-y: center;
+    background-position-x: center;
+    border-top-left-radius: 180px;
+    margin-top: 0;
+    height: 850px;
+  }
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32%;
+  }
+
+  .form {
+    width: 24%;
+  }
+
+  .form ul {
+    gap: 27px;
+  }
+
+  .form ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form ul li input {
+    border-radius: 0;
+  }
+
+  .form ul li textarea {
+    border-radius: 0;
+  }
+
+  .form-btn {
+    align-self: center;
+  }
 }
