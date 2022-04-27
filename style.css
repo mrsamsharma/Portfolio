@@ -458,7 +458,7 @@ main {
     line-height: 60px;
     padding: 0;
   }
-  
+
   .introductory-text {
     font-size: 20px;
     line-height: 28px;
@@ -627,6 +627,7 @@ main {
   .solid {
     border: 1px solid #dfe1e6;
   }
+  
   .category-spacing {
     margin-top: 26px;
     margin-bottom: 23px;
