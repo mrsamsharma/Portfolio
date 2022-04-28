@@ -33,6 +33,12 @@ header {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  transition: all 1s;
+}
+
+.logo:hover {
+  font-size: 1.5em;
+  transform: rotate(360deg);
 }
 
 .nav-icon {
@@ -679,4 +685,3 @@ main {
     align-self: center;
   }
 }
-
