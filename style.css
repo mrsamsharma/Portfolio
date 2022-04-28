@@ -170,7 +170,9 @@ main {
   align-self: flex-start;
   margin-top: 24px;
   background-color: #fff;
+  transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 
 .card-button:hover {
   color: #fff;
@@ -677,3 +679,4 @@ main {
     align-self: center;
   }
 }
+
