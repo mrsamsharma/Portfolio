@@ -10,8 +10,13 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://htmlpreview.github.io/?https://github.com/samWfelice/Portfolio/blob/main/index.html)
+[Live Demo Link](https:samwfelice.github.io/Portfolio)
 
+## Show your support
+To make a copy of this repository in your local machine. Run:
+```
+git clone git@github.com:samWfelice/Portfolio.git
+```
 
 ## Authors
 
