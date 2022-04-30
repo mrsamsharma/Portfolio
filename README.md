@@ -10,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https:samwfelice.github.io/Portfolio)
+[Live Demo Link](https://samwfelice.github.io/Portfolio/)
 
 ## To make a copy
 
