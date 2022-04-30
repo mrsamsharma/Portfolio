@@ -12,8 +12,9 @@
 
 [Live Demo Link](https:samwfelice.github.io/Portfolio)
 
-## Show your support
-To make a copy of this repository in your local machine. Run:
+## To make a copy
+
+Run:
 ```
 git clone git@github.com:samWfelice/Portfolio.git
 ```
