@@ -165,7 +165,7 @@ main {
 }
 
 .card-button {
-  border: 1px solid #6070ff;
+  border: 1px solid #5061f6;
   border-radius: 8px;
   padding: 12px;
   font-weight: 500;
@@ -180,8 +180,8 @@ main {
 }
 
 .card-button:hover {
-  color: rgb(227, 227, 227);
-  background-color: #5061f6;
+  color: #fff;
+  background-color: #3141ce;
 }
 
 .card-button:active {
