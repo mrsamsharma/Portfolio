@@ -242,7 +242,7 @@ main {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  border: 1px solid #6070ff;
+  border: 1px solid #3141ce;
   border-radius: 8px;
   padding: 12px;
   background-color: #fff;
@@ -250,7 +250,7 @@ main {
 
 .resume-btn:hover {
   color: #fff;
-  background-color: #6070ff;
+  background-color: #3141ce;
 }
 
 .resume-btn:active {
@@ -395,7 +395,7 @@ main {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   background-color: #fff;
-  color: #6070ff;
+  color: #5061f6;
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
@@ -404,7 +404,6 @@ main {
 }
 
 .form-btn:disabled {
-  align-self: flex-start;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   background-color: #fff;
@@ -416,10 +415,9 @@ main {
 }
 
 .form-btn:hover {
-  align-self: flex-start;
   border: 1px solid #6077ff;
   border-radius: 8px;
-  background-color: #6077ff;
+  background-color: #353641;
   color: #fff;
   font-size: 17px;
   font-weight: 500;
