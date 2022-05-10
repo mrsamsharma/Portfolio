@@ -41,6 +41,10 @@ header {
   transform: rotate(360deg);
 }
 
+.logo:focus {
+  outline: #000;
+}
+
 .nav-icon {
   display: flex;
   flex-direction: column;
@@ -194,6 +198,10 @@ main {
   color: #5e6c84;
 }
 
+.card-button:focus {
+  outline: #000;
+}
+
 .about-me {
   margin-top: 114px;
 }
@@ -261,6 +269,10 @@ main {
 .resume-btn:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+.resume-btn:focus {
+  outline: #000;
 }
 
 .skills {
@@ -423,6 +435,10 @@ main {
   font-weight: 500;
   line-height: 24px;
   padding: 12px 16px 12px 16px;
+}
+
+.form-btn:focus {
+  outline: #000;
 }
 
 @media screen and (min-width: 768px) {
