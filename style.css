@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
   .desktop-work {
     display: none;
   }
@@ -13,7 +12,7 @@
   .desktop-nav {
     display: none;
   }
-}
+
 
 body {
   background-color: #e5e5e5;
@@ -58,6 +57,39 @@ header {
   height: 2px;
   border-radius: 2px;
 }
+
+.mobile-nav-menu {
+  position: absolute;
+  background-color: rgb(96,112,255, 0.85);
+  backdrop-filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 62px 32px 0 28px;
+}
+
+.mobile-nav-menu img {
+  display: block;
+  margin-left: auto;
+}
+
+.mobile-nav-menu ul {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.mobile-nav-menu ul li {
+  margin-bottom: 20px;
+}
+
+.mobile-nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
 
 main {
   display: flex;
@@ -442,6 +474,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-nav-menu {
+    display: none;
+  }
+
   .desktop-card-item img {
     max-width: 545px;
     width: 50%;
