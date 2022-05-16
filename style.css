@@ -5,14 +5,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-  .desktop-work {
-    display: none;
-  }
+.desktop-work {
+  display: none;
+}
 
-  .desktop-nav {
-    display: none;
-  }
-
+.desktop-nav {
+  display: none;
+}
 
 body {
   background-color: #e5e5e5;
@@ -61,7 +60,7 @@ header {
 .mobile-nav-menu {
   display: none;
   position: absolute;
-  background-color: rgb(96,112,255, 0.85);
+  background-color: rgb(96, 112, 255, 0.85);
   backdrop-filter: blur(4px);
   width: 100vw;
   height: 100vh;
@@ -90,7 +89,6 @@ header {
   font-size: 32px;
   font-weight: 600;
 }
-
 
 main {
   display: flex;

@@ -3,12 +3,12 @@ const secondClick = document.querySelector('.cross-icon');
 const navItems = document.querySelectorAll('.mobile-nav-menu a');
 
 function toggleMenu() {
-   document.querySelector('.mobile-nav-menu').classList.toggle('d-block')  
+  document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
 }
 
 firstClick.addEventListener('click', toggleMenu);
 secondClick.addEventListener('click', toggleMenu);
 
 navItems.forEach((navItem) => {
-    navItem.addEventListener('click', toggleMenu);
+  navItem.addEventListener('click', toggleMenu);
 });
