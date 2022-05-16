@@ -59,6 +59,7 @@ header {
 }
 
 .mobile-nav-menu {
+  display: none;
   position: absolute;
   background-color: rgb(96,112,255, 0.85);
   backdrop-filter: blur(4px);
@@ -740,4 +741,8 @@ main {
   .form-btn {
     align-self: center;
   }
+}
+
+.d-block {
+  display: block;
 }
