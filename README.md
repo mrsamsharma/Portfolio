@@ -27,6 +27,12 @@ git clone git@github.com:samWfelice/Portfolio.git
 - Twitter: [@samwfelice](https://twitter.com/samwfelice)
 - LinkedIn: [samfelice](https://www.linkedin.com/in/samfelice)
 
+👤 **Patrick Ndimukulaga**
+
+- GitHub: [@kirabo19](https://github.com/kirabo19)
+- Twitter: [@Ndimuku](https://twitter.com/Ndimuku)
+- LinkedIn: [kapojames](https://linkedin.com/in/kapojames)
+
 
 ## 🤝 Contributing
 
