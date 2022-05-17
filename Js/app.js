@@ -6,8 +6,8 @@ function toggleMenu() {
   document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
 }
 
-firstClick.addEventListener('click', toggleMenu);
-secondClick.addEventListener('click', toggleMenu);
+hamburgerBtn.addEventListener('click', toggleMenu);
+crossIcon.addEventListener('click', toggleMenu);
 
 navItems.forEach((navItem) => {
   navItem.addEventListener('click', toggleMenu);
