@@ -5,6 +5,58 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.project-one-pop {
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-heading {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pop-canopy {
+  color:#344563;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.pop-gray-matter {
+  color: #7a869a;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pop-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.popBtn {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.popBtn button {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
 .desktop-work {
   display: none;
 }
