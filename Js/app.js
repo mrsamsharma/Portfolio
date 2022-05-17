@@ -1,5 +1,5 @@
-const firstClick = document.querySelector('.nav-icon');
-const secondClick = document.querySelector('.cross-icon');
+const hamburgerBtn = document.querySelector('.nav-icon');
+const crossIcon = document.querySelector('.cross-icon');
 const navItems = document.querySelectorAll('.mobile-nav-menu a');
 
 function toggleMenu() {

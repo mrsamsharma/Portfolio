@@ -487,6 +487,10 @@ main {
     display: none;
   }
 
+  .desktop-nav {
+    display: block;
+  }
+
   .desktop-nav ul {
     list-style: none;
     display: flex;
