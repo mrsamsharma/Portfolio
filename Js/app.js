@@ -76,7 +76,7 @@ navItems.forEach((navItem) => {
 });
 
 function displayPopup(e) {
-  const exData = portfolioData.filter((d) => +(e.target.id) === d.id)
+  const exData = portfolioData.filter((d) => +(e.target.id) === d.id);
   const data = exData[0];
   const popupWrapper = document.createElement('div');
   popupWrapper.className = 'project-one-pop';
@@ -95,7 +95,7 @@ function displayPopup(e) {
   popImage.setAttribute('src', './images/icons/cross-icon-popup.svg')
   popImage.addEventListener('click', (e) => {
     e.target.parentElement.parentElement.parentElement.remove();
-  })
+  });
   popHeader.appendChild(popImage);
   popContent.appendChild(popHeader);
   const popSubheading = document.createElement('div');
