@@ -586,24 +586,22 @@ main {
   }
   
   .project-one-pop {
+    display: flex;
+    justify-content: center;
     position: absolute;
     border-radius: 16px;
-    width: 95%;
-    max-width: 1163px;
+    /* max-width: 1156px; */
+    /* max-width: 1163px; */
   }
   
   .pop-content {
-    position: absolute;
-    padding: 18px 16px 18px 16px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 16px;
-    z-index: 2;
+    
+    background-color: #000;
   }
   
   .popup-header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
   
   .pop-heading {
@@ -630,7 +628,7 @@ main {
   .pop-image {
     width: 90%;
     margin-top: 25px;
-    max-width: 1163px;
+    /* max-width: 1163px; */
   }
 
   .pop-desktop-content {
@@ -642,12 +640,14 @@ main {
     font-weight: 400;
     font-size: 15px;
     margin-top: 10px;
-    max-width: 380px;
+    width: 500px;
+    /* max-width: 380px; */
   }
 
   .desktopPopLiBtn {
     display: flex;
     flex-direction: column;
+    margin-left: 24px;
   }
   
   .pop-card-list {
