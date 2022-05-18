@@ -5,12 +5,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.pop-overlay {
+  position: fixed;
+  background-color: rgb(193, 199, 208,0.9);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .project-one-pop {
   position: absolute;
-  padding: 20px;
+  border-radius: 16px;
+  width: 95%;
+}
+
+.pop-content {
+  position: absolute;
+  padding: 18px 16px 18px 16px;
   margin: 20px;
   background-color: #fff;
   border-radius: 16px;
+  z-index: 2;
 }
 
 .popup-header {
@@ -24,6 +41,10 @@
   font-weight: 700;
 }
 
+.pop-subheading {
+  margin-top: 15px;
+}
+
 .pop-canopy {
   color:#344563;
   font-weight: 600;
@@ -33,28 +54,57 @@
 .pop-gray-matter {
   color: #7a869a;
   font-weight: 600;
+}
+
+.pop-image {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .pop-paragraph {
   color: #344563;
   font-weight: 400;
   font-size: 15px;
+  margin-top: 10px;
+}
+
+.pop-card-list {
+  margin-top: 10px;
+}
+
+.pop-separator {
+  border: 1px solid #ebecf0 ;
+  margin-top: 020px;
+
 }
 
 .popBtn {
   display: flex;
   flex: 1;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .popBtn button {
   display: flex;
   align-items: center;
   gap: 22px;
+}
+
+.pop-card-button {
+  border: 1px solid #5061f6;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #396df2;
+  align-self: flex-start;
+  margin-top: 24px;
+  background-color: #fff;
+  transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .desktop-work {
@@ -525,6 +575,126 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .pop-overlay {
+    position: fixed;
+    background-color: rgb(193, 199, 208,0.9);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .project-one-pop {
+    position: absolute;
+    border-radius: 16px;
+    width: 95%;
+    max-width: 1163px;
+  }
+  
+  .pop-content {
+    position: absolute;
+    padding: 18px 16px 18px 16px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: 2;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pop-heading {
+    color: #172b4d;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pop-subheading {
+    margin-top: 15px;
+  }
+  
+  .pop-canopy {
+    color:#344563;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .pop-gray-matter {
+    color: #7a869a;
+    font-weight: 600;
+  }
+  
+  .pop-image {
+    width: 90%;
+    margin-top: 25px;
+    max-width: 1163px;
+  }
+
+  .pop-desktop-content {
+    display: flex;
+  }
+  
+  .pop-paragraph {
+    color: #344563;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    max-width: 380px;
+  }
+
+  .desktopPopLiBtn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pop-card-list {
+    margin-top: 10px;
+    height: 50px;
+  }
+  
+  .pop-separator {
+    border: 1px solid #ebecf0 ;
+    margin-top: 020px;
+  
+  }
+  
+  .popBtn {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .popBtn button {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  
+  .pop-card-button {
+    border: 1px solid #5061f6;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #396df2;
+    align-self: flex-start;
+    margin-top: 24px;
+    background-color: #fff;
+    transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .desktop-work{
+    display: block;
+  }
+
   .mobile-nav-menu {
     display: none;
   }
