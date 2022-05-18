@@ -58,6 +58,7 @@ const portfolioData = [
       seesource: 'https://github.com/samWfelice/Portfolio'  
   }
 ];
+
 const btn0 = document.getElementById('0');
 const btn1 = document.getElementById('1');
 const btn2 = document.getElementById('2');
@@ -135,17 +136,19 @@ function displayPopup(e) {
   ulBtnWrapper.appendChild(separaterLine);
   const btnWrapper = document.createElement('div');
   btnWrapper.className = 'popBtn';
-  const liveBtn = document.createElement('button');
+  const liveBtn = document.createElement('a');
   liveBtn.className = 'pop-card-button';
-  liveBtn.setAttribute('type', 'button');
+  liveBtn.setAttribute('href', data.seelive);
+  liveBtn.setAttribute('target', '_blank');
   liveBtn.textContent = 'See Live ';
   const liveBtnIcon = document.createElement('img');
   liveBtnIcon.setAttribute('src', './images/icons/github-icon.svg');
   liveBtn.appendChild(liveBtnIcon);
   btnWrapper.appendChild(liveBtn);
-  const sourceBtn = document.createElement('button');
+  const sourceBtn = document.createElement('a');
   sourceBtn.className = 'pop-card-button';
-  sourceBtn.setAttribute('type', 'button');
+  sourceBtn.setAttribute('href', data.seesource);
+  sourceBtn.setAttribute('target', '_blank');
   sourceBtn.textContent = 'See Source ';
   const sourceBtnIcon = document.createElement('img');
   sourceBtnIcon.setAttribute('src', './images/icons/source-icon.svg');

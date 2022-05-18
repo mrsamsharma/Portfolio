@@ -95,18 +95,39 @@
 }
 
 .pop-card-button {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  text-align: center;
   border: 1px solid #5061f6;
   border-radius: 8px;
   padding: 10px;
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  text-align: center;
   color: #396df2;
-  align-self: flex-start;
   margin-top: 24px;
   background-color: #fff;
   transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pop-card-button:hover {
+  color: #fff;
+  background-color: #3141ce;
+}
+
+.pop-card-button:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.pop-card-button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+.pop-card-button:focus {
+  outline: 2px solid #000;
 }
 
 .desktop-nav {
