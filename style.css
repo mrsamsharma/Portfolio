@@ -58,6 +58,7 @@
 
 .pop-image {
   margin-top: 20px;
+  width: 100%;
 }
 
 .pop-paragraph {
@@ -590,18 +591,11 @@ main {
     justify-content: center;
     position: absolute;
     border-radius: 16px;
-    /* max-width: 1156px; */
-    /* max-width: 1163px; */
   }
   
   .pop-content {
-    
-    background-color: #000;
-  }
-  
-  .popup-header {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
   }
   
   .pop-heading {
@@ -626,9 +620,9 @@ main {
   }
   
   .pop-image {
-    width: 90%;
+    width: 100%;
     margin-top: 25px;
-    /* max-width: 1163px; */
+    align-self: center;
   }
 
   .pop-desktop-content {
@@ -639,15 +633,15 @@ main {
     color: #344563;
     font-weight: 400;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 500px;
-    /* max-width: 380px; */
   }
 
   .desktopPopLiBtn {
     display: flex;
     flex-direction: column;
     margin-left: 24px;
+    margin-top: 10px;
   }
   
   .pop-card-list {
