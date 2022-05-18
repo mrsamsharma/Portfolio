@@ -10,7 +10,7 @@ const portfolioData = [
       subheading2: '• Back End Dev • 2015',
       image: './images/cards/card1.svg',
       imageAlt: 'Tonic-screenshot',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
       technologies: ['html', 'css', 'Javascript'],
       seelive: 'https://samwfelice.github.io/Portfolio/',  
       seesource: 'https://github.com/samWfelice/Portfolio'
@@ -20,11 +20,11 @@ const portfolioData = [
       id: 1,
       title: 'Multi-Post Stories',
       crossicon: './images/icons/cross-icon-popup.svg',
-      subheading: 'FACEBOOK ',
-      subheading2: '• Full Stack Dev • 2015',
+      subheading: 'CANOPY ',
+      subheading2: '• Back End Dev • 2015',
       image: './images/cards/card2.svg',
       imageAlt: 'Multi-Post-stories-screenshot',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
       technologies: ['html','Ruby on rails' ,'css', 'Javascript'],
       seelive: 'https://samwfelice.github.io/Portfolio/',  
       seesource: 'https://github.com/samWfelice/Portfolio'  
@@ -32,13 +32,13 @@ const portfolioData = [
 
   {
       id: 2,
-      title: 'Facebook 360',
+      title: 'Tonic',
       crossicon: './images/icons/cross-icon-popup.svg',
-      subheading: 'FACEBOOK ',
-      subheading2: '• Full Stack Dev • 2015',
+      subheading: 'CANOPY ',
+      subheading2: '• Back End Dev • 2015',
       image: './images/cards/card3.svg',
       imageAlt: 'Tonic-screenshot',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
       technologies: ['html','Ruby on rails' ,'css', 'Javascript'],
       seelive: 'https://samwfelice.github.io/Portfolio/',  
       seesource: 'https://github.com/samWfelice/Portfolio'  
@@ -46,19 +46,22 @@ const portfolioData = [
 
   {
       id: 3,
-      title: 'Uber Navigation',
+      title: 'Multi-Post Stories',
       crossicon: './images/icons/cross-icon-popup.svg',
-      subheading: 'Uber ',
-      subheading2: '• Lead Developer • 2018',
+      subheading: 'CANOPY ',
+      subheading2: '• Back End Dev • 2015',
       image: './images/cards/card4.svg',
       imageAlt: 'Multi-Post-stories-screenshot',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
       technologies: ['html','Ruby on rails' ,'css', 'Javascript'],
       seelive: 'https://samwfelice.github.io/Portfolio/',  
       seesource: 'https://github.com/samWfelice/Portfolio'  
   }
 ];
-const btn = document.getElementById('1');
+const btn0 = document.getElementById('0');
+const btn1 = document.getElementById('1');
+const btn2 = document.getElementById('2');
+const btn3 = document.getElementById('3');
 
 function toggleMenu() {
   document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
@@ -155,6 +158,15 @@ function displayPopup(e) {
   document.body.appendChild(popupWrapper);
 }
 
-btn.addEventListener('click', (e) => {
+btn0.addEventListener('click', (e) => {
+  displayPopup(e);
+});
+btn1.addEventListener('click', (e) => {
+  displayPopup(e);
+});
+btn2.addEventListener('click', (e) => {
+  displayPopup(e);
+});
+btn3.addEventListener('click', (e) => {
   displayPopup(e);
 });

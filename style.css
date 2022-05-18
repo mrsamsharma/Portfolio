@@ -16,7 +16,8 @@
 }
 
 .project-one-pop {
-  position: absolute;
+  position: fixed;
+  top: 0;
   border-radius: 16px;
   width: 95%;
 }
@@ -296,6 +297,7 @@ main {
   font-size: 12px;
   line-height: 16px;
   color: #5061f6;
+  align-self: center;
 }
 
 .card-button {
@@ -585,7 +587,6 @@ main {
   .project-one-pop {
     display: flex;
     justify-content: center;
-    position: absolute;
     border-radius: 16px;
   }
   
@@ -616,7 +617,7 @@ main {
   }
   
   .pop-image {
-    width: 100%;
+    width: 80%;
     margin-top: 25px;
     align-self: center;
   }
@@ -642,7 +643,6 @@ main {
   
   .pop-card-list {
     margin-top: 10px;
-    height: 50px;
   }
   
   .pop-separator {
