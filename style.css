@@ -7,7 +7,7 @@
 
 .pop-overlay {
   position: fixed;
-  background-color: rgb(193, 199, 208,0.9);
+  background-color: rgb(193, 199, 208, 0.9);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -47,7 +47,7 @@
 }
 
 .pop-canopy {
-  color:#344563;
+  color: #344563;
   font-weight: 600;
   font-size: 13px;
 }
@@ -74,9 +74,8 @@
 }
 
 .pop-separator {
-  border: 1px solid #ebecf0 ;
-  margin-top: 020px;
-
+  border: 1px solid #ebecf0;
+  margin-top: 20px;
 }
 
 .popBtn {
@@ -597,46 +596,46 @@ main {
 @media screen and (min-width: 768px) {
   .pop-overlay {
     position: fixed;
-    background-color: rgb(193, 199, 208,0.9);
+    background-color: rgb(193, 199, 208, 0.9);
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     z-index: 1;
   }
-  
+
   .project-one-pop {
     display: flex;
     justify-content: center;
     border-radius: 16px;
   }
-  
+
   .pop-content {
     display: flex;
     flex-direction: column;
   }
-  
+
   .pop-heading {
     color: #172b4d;
     font-size: 32px;
     font-weight: 700;
   }
-  
+
   .pop-subheading {
     margin-top: 15px;
   }
-  
+
   .pop-canopy {
-    color:#344563;
+    color: #344563;
     font-weight: 600;
     font-size: 13px;
   }
-  
+
   .pop-gray-matter {
     color: #7a869a;
     font-weight: 600;
   }
-  
+
   .pop-image {
     width: 80%;
     margin-top: 25px;
@@ -646,7 +645,7 @@ main {
   .pop-desktop-content {
     display: flex;
   }
-  
+
   .pop-paragraph {
     color: #344563;
     font-weight: 400;
@@ -661,17 +660,16 @@ main {
     margin-left: 24px;
     margin-top: 10px;
   }
-  
+
   .pop-card-list {
     margin-top: 10px;
   }
-  
+
   .pop-separator {
-    border: 1px solid #ebecf0 ;
+    border: 1px solid #ebecf0;
     margin-top: 020px;
-  
   }
-  
+
   .popBtn {
     display: flex;
     flex: 1;
@@ -680,13 +678,13 @@ main {
     align-items: center;
     margin-top: 10px;
   }
-  
+
   .popBtn button {
     display: flex;
     align-items: center;
     gap: 22px;
   }
-  
+
   .pop-card-button {
     border: 1px solid #5061f6;
     border-radius: 8px;
@@ -727,7 +725,7 @@ main {
     border-radius: 16px;
     gap: 40px;
   }
-  
+
   .card-item-reverse img {
     width: 550px;
   }
