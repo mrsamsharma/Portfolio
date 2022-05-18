@@ -108,10 +108,6 @@
   transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.desktop-work {
-  display: none;
-}
-
 .desktop-nav {
   display: none;
 }
@@ -685,9 +681,74 @@ main {
     transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .desktop-work{
+  /* Desktop Work section */
+
+  .work {
     display: block;
   }
+
+  .card-item {
+    flex-direction: row;
+  }
+
+  .card-item img {
+    width: 550px;
+  }
+
+  .card-item-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #fff;
+    margin-top: 88px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 40px;
+  }
+  
+  .card-item-reverse img {
+    width: 550px;
+  }
+
+  .card-heading {
+    font-size: 40px;
+    line-height: 52px;
+    padding-left: 24px;
+  }
+
+  .canopy {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .gray-matter {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-list {
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-button {
+    margin-left: 24px;
+    margin-top: 40px;
+  }
+
+  /* Desktop Work section */
 
   .mobile-nav-menu {
     display: none;
@@ -762,77 +823,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-
-  .card-container {
-    display: none;
-  }
-
-  .desktop-card-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 142px;
-    align-items: center;
-    gap: 142px;
-  }
-
-  .desktop-card-item {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-    border-radius: 24px;
-    padding: 24px;
-    max-width: 1300px;
-  }
-
-  .desktop-card-info {
-    display: flex;
-    flex-direction: column;
-    width: 42%;
-    padding: 24px 22px 27px 22px;
-  }
-
-  .uber {
-    flex: 1;
-    width: 50%;
-    padding: 24px 22px 27px 22px;
-  }
-
-  .card-heading {
-    font-size: 40px;
-    line-height: 52px;
-    padding-left: 24px;
-  }
-
-  .canopy {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .gray-matter {
-    font-weight: 400;
-    font-size: 18px;
-    padding-left: 0;
-  }
-
-  .card-paragraph {
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .card-list {
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .card-button {
-    margin-left: 24px;
-    margin-top: 40px;
   }
 
   .about-me-heading {

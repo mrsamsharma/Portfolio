@@ -57,7 +57,8 @@ const portfolioData = [
       seelive: 'https://samwfelice.github.io/Portfolio/',  
       seesource: 'https://github.com/samWfelice/Portfolio'  
   }
-]
+];
+const btn = document.getElementById('1');
 
 function toggleMenu() {
   document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
@@ -70,7 +71,9 @@ navItems.forEach((navItem) => {
   navItem.addEventListener('click', toggleMenu);
 });
 
-function displayPopup(id, title, subheading, image, description, technologies) {
+function displayPopup(e) {
+  const exData = portfolioData.filter((d) => +(e.target.id) === d.id)
+  const data = exData[0];
   const popupWrapper = document.createElement('div');
   popupWrapper.className = 'project-one-pop';
   const popOverlay = document.createElement('div');
@@ -82,59 +85,57 @@ function displayPopup(id, title, subheading, image, description, technologies) {
   popHeader.className = 'popup-header';
   const popHeadline = document.createElement('h2');
   popHeadline.className = 'pop-heading';
-  popHeadline.textContent = title;
+  popHeadline.textContent = data.title;
   popHeader.appendChild(popHeadline);
   const popImage = document.createElement('img');
   popImage.setAttribute('src', './images/icons/cross-icon-popup.svg')
+  popImage.addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.parentElement.remove();
+  })
   popHeader.appendChild(popImage);
   popContent.appendChild(popHeader);
   const popSubheading = document.createElement('div');
   popSubheading.className = 'pop-subheading';
   const canopy = document.createElement('span');
   canopy.className = 'pop-canopy';
-  canopy.textContent = subheading;
+  canopy.textContent = data.subheading;
   popSubheading.appendChild(canopy);
   const grayMatter = document.createElement('span');
   canopy.className = 'pop-gray-matter';
-  canopy.textContent = subheading2;
+  canopy.textContent = data.subheading2;
   popSubheading.appendChild(grayMatter);
   popContent.appendChild(popSubheading);
   const featuredImage = document.createElement('img');
   featuredImage.className = 'pop-image';
-  featuredImage.setAttribute('src', image);
-  featuredImage.setAttribute('alt', imageAlt);
+  featuredImage.setAttribute('src', data.image);
+  featuredImage.setAttribute('alt', '');
   popContent.appendChild(featuredImage);
   const desktopContent = document.createElement('div');
   desktopContent.className = 'pop-desktop-content';
   const popParagraph = document.createElement('p');
   popParagraph.className = 'pop-paragraph';
-  popParagraph.textContent = description;
+  popParagraph.textContent = data.description;
   desktopContent.appendChild(popParagraph);
   const ulBtnWrapper = document.createElement('div');
   ulBtnWrapper.className = 'desktopPopLiBtn';
   const technologiesList = document.createElement('ul');
   technologiesList.className = 'card-list pop-card-list'
-  const technologiesItem1 = document.createElement('li');
-  technologiesItem.className = 'card-list-items';
-  technologiesItem.textContent = technologies;
-  ulBtnWrapper.appendChild(technologiesItem1);
-  const technologiesItem2 = document.createElement('li');
-  technologiesItem.className = 'card-list-items';
-  technologiesItem.textContent = technologies;
-  ulBtnWrapper.appendChild(technologiesItem2);
-  const technologiesItem3 = document.createElement('li');
-  technologiesItem.className = 'card-list-items';
-  technologiesItem.textContent = technologies;
-  ulBtnWrapper.appendChild(technologiesItem3);
+  data.technologies.forEach((tech) => {
+    const technologiesItem = document.createElement('li');
+    technologiesItem.className = 'card-list-items';
+    technologiesItem.textContent = tech;
+    technologiesList.appendChild(technologiesItem);
+  });
+  ulBtnWrapper.appendChild(technologiesList);
   const separaterLine = document.createElement('hr');
   separaterLine.className = 'pop-separator';
-  desktopContent.appendChild(separaterLine);
+  ulBtnWrapper.appendChild(separaterLine);
   const btnWrapper = document.createElement('div');
   btnWrapper.className = 'popBtn';
   const liveBtn = document.createElement('button');
   liveBtn.className = 'pop-card-button';
   liveBtn.setAttribute('type', 'button');
-  liveBtn.textContent = 'See Live';
+  liveBtn.textContent = 'See Live ';
   const liveBtnIcon = document.createElement('img');
   liveBtnIcon.setAttribute('src', './images/icons/github-icon.svg');
   liveBtn.appendChild(liveBtnIcon);
@@ -142,12 +143,18 @@ function displayPopup(id, title, subheading, image, description, technologies) {
   const sourceBtn = document.createElement('button');
   sourceBtn.className = 'pop-card-button';
   sourceBtn.setAttribute('type', 'button');
-  sourceBtn.textContent = 'See Source';
+  sourceBtn.textContent = 'See Source ';
   const sourceBtnIcon = document.createElement('img');
-  liveBtnIcon.setAttribute('src', './images/icons/source-icon.svg');
-  sourceBtn.appendChild(liveBtnIcon);
+  sourceBtnIcon.setAttribute('src', './images/icons/source-icon.svg');
+  sourceBtn.appendChild(sourceBtnIcon);
   btnWrapper.appendChild(sourceBtn);
   ulBtnWrapper.appendChild(btnWrapper);
   desktopContent.appendChild(ulBtnWrapper);
-  popupWrapper.appendChild(desktopContent);
+  popContent.appendChild(desktopContent);
+  popupWrapper.appendChild(popContent);
+  document.body.appendChild(popupWrapper);
 }
+
+btn.addEventListener('click', (e) => {
+  displayPopup(e);
+});
