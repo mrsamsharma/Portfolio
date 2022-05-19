@@ -5,8 +5,128 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.desktop-work {
-  display: none;
+.pop-overlay {
+  position: fixed;
+  background-color: rgb(193, 199, 208, 0.9);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.project-one-pop {
+  position: absolute;
+  top: 0;
+  border-radius: 16px;
+  width: 95%;
+}
+
+.pop-content {
+  position: absolute;
+  padding: 18px 16px 18px 16px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-heading {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pop-subheading {
+  margin-top: 15px;
+}
+
+.pop-canopy {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.pop-gray-matter {
+  color: #7a869a;
+  font-weight: 600;
+}
+
+.pop-image {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pop-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.pop-card-list {
+  margin-top: 10px;
+}
+
+.pop-separator {
+  border: 1px solid #ebecf0;
+  margin-top: 20px;
+}
+
+.popBtn {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.popBtn button {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.pop-card-button {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #5061f6;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #396df2;
+  margin-top: 24px;
+  background-color: #fff;
+  transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pop-card-button:hover {
+  color: #fff;
+  background-color: #3141ce;
+}
+
+.pop-card-button:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.pop-card-button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+.pop-card-button:focus {
+  outline: 2px solid #000;
 }
 
 .desktop-nav {
@@ -197,6 +317,7 @@ main {
   font-size: 12px;
   line-height: 16px;
   color: #5061f6;
+  align-self: center;
 }
 
 .card-button {
@@ -473,6 +594,181 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .pop-overlay {
+    position: fixed;
+    background-color: rgb(193, 199, 208, 0.9);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .project-one-pop {
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+  }
+
+  .pop-content {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .pop-heading {
+    color: #172b4d;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .pop-subheading {
+    margin-top: 15px;
+  }
+
+  .pop-canopy {
+    color: #344563;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .pop-gray-matter {
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .pop-image {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .pop-desktop-content {
+    display: flex;
+  }
+
+  .pop-paragraph {
+    color: #344563;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+    width: 750px;
+  }
+
+  .desktopPopLiBtn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-top: 10px;
+  }
+
+  .pop-card-list {
+    margin-top: 10px;
+  }
+
+  .pop-separator {
+    border: 1px solid #ebecf0;
+    margin-top: 020px;
+  }
+
+  .popBtn {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .popBtn button {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .pop-card-button {
+    border: 1px solid #5061f6;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #396df2;
+    align-self: flex-start;
+    margin-top: 24px;
+    background-color: #fff;
+    transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Desktop Work section */
+
+  .work {
+    display: block;
+  }
+
+  .card-item {
+    flex-direction: row;
+  }
+
+  .card-item img {
+    width: 550px;
+  }
+
+  .card-item-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #fff;
+    margin-top: 88px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 40px;
+  }
+
+  .card-item-reverse img {
+    width: 550px;
+  }
+
+  .card-heading {
+    font-size: 40px;
+    line-height: 52px;
+    padding-left: 24px;
+  }
+
+  .canopy {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .gray-matter {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-list {
+    padding-left: 24px;
+    padding-top: 24px;
+  }
+
+  .card-button {
+    margin-left: 24px;
+    margin-top: 40px;
+  }
+
+  /* Desktop Work section */
+
   .mobile-nav-menu {
     display: none;
   }
@@ -546,77 +842,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-
-  .card-container {
-    display: none;
-  }
-
-  .desktop-card-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 142px;
-    align-items: center;
-    gap: 142px;
-  }
-
-  .desktop-card-item {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-    border-radius: 24px;
-    padding: 24px;
-    max-width: 1300px;
-  }
-
-  .desktop-card-info {
-    display: flex;
-    flex-direction: column;
-    width: 42%;
-    padding: 24px 22px 27px 22px;
-  }
-
-  .uber {
-    flex: 1;
-    width: 50%;
-    padding: 24px 22px 27px 22px;
-  }
-
-  .card-heading {
-    font-size: 40px;
-    line-height: 52px;
-    padding-left: 24px;
-  }
-
-  .canopy {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .gray-matter {
-    font-weight: 400;
-    font-size: 18px;
-    padding-left: 0;
-  }
-
-  .card-paragraph {
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .card-list {
-    padding-left: 24px;
-    padding-top: 24px;
-  }
-
-  .card-button {
-    margin-left: 24px;
-    margin-top: 40px;
   }
 
   .about-me-heading {
