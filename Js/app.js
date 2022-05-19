@@ -63,8 +63,7 @@ const btn1 = document.getElementById('1');
 const btn2 = document.getElementById('2');
 const btn3 = document.getElementById('3');
 const userEmail = document.getElementById('userEmail');
-const message = 'Please use lower case for the email';
-const emailRegex = /^[a-z]+\@[^\s]+\.[^\s]+$/;
+const emailRegex = /^[a-z]+@[^\s]+\.[^\s]+$/;
 const formBtn = document.querySelector('.form-btn');
 
 function toggleMenu() {
@@ -189,38 +188,35 @@ const showError = (input, message) => {
   errorMsg.textContent = message;
   document.querySelector('.appendError').appendChild(errorMsg);
   setTimeout(() => {
-    errorMsg.textContent  = '';
+    errorMsg.textContent = '';
   }, 1250);
 };
 
 const showSuccess = (input) => {
   // get the form-field element
   const formField = input.parentElement;
-  
   // remove the error class
   formField.classList.remove('error');
   formField.classList.add('success');
-
   // hide the error message
   document.querySelector('.small').remove();
-}
+};
+
+const isEmailValid = (email) => (
+  emailRegex.test(email)
+);
 
 const checkEmail = () => {
   let valid = false;
   const email = userEmail.value.trim();
   if (!isEmailValid(email)) {
-      showError(userEmail, 'Please use lower Case for the email.');
+    showError(userEmail, 'Please use lower Case for the email.');
   } else {
-      showSuccess(userEmail);
-      valid = true;
+    showSuccess(userEmail);
+    valid = true;
   }
   return valid;
-}
-
-const isEmailValid = (email) => {
-  return emailRegex.test(email);
 };
-
 
 formBtn.addEventListener('click', function (e) {
   // prevent the form from submitting
