@@ -58,11 +58,14 @@ const portfolioData = [
     seesource: 'https://github.com/samWfelice/Portfolio',
   },
 ];
-
 const btn0 = document.getElementById('0');
 const btn1 = document.getElementById('1');
 const btn2 = document.getElementById('2');
 const btn3 = document.getElementById('3');
+const userEmail = document.getElementById('userEmail');
+const message = 'Please use lower case for the email';
+const emailRegex = /^[a-z]+\@[^\s]+\.[^\s]+$/;
+const formBtn = document.querySelector('.form-btn');
 
 function toggleMenu() {
   document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
@@ -172,4 +175,56 @@ btn2.addEventListener('click', (e) => {
 });
 btn3.addEventListener('click', (e) => {
   displayPopup(e);
+});
+
+const showError = (input, message) => {
+  // get the form-field element
+  const formField = input.parentElement;
+  // add the error class
+  formField.classList.remove('success');
+  formField.classList.add('error');
+  const errorMsg = document.createElement('span');
+  errorMsg.className = 'small';
+  // show the error message
+  errorMsg.textContent = message;
+  document.querySelector('.appendError').appendChild(errorMsg);
+  setTimeout(() => {
+    errorMsg.textContent  = '';
+  }, 1250);
+};
+
+const showSuccess = (input) => {
+  // get the form-field element
+  const formField = input.parentElement;
+  
+  // remove the error class
+  formField.classList.remove('error');
+  formField.classList.add('success');
+
+  // hide the error message
+  document.querySelector('.small').remove();
+}
+
+const checkEmail = () => {
+  let valid = false;
+  const email = userEmail.value.trim();
+  if (!isEmailValid(email)) {
+      showError(userEmail, 'Please use lower Case for the email.');
+  } else {
+      showSuccess(userEmail);
+      valid = true;
+  }
+  return valid;
+}
+
+const isEmailValid = (email) => {
+  return emailRegex.test(email);
+};
+
+
+formBtn.addEventListener('click', function (e) {
+  // prevent the form from submitting
+  if (!checkEmail()) {
+    e.preventDefault();
+  }
 });
