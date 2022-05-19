@@ -218,7 +218,7 @@ const checkEmail = () => {
   return valid;
 };
 
-formBtn.addEventListener('click', function (e) {
+formBtn.addEventListener('click', (e) => {
   // prevent the form from submitting
   if (!checkEmail()) {
     e.preventDefault();
