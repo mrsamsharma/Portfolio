@@ -234,7 +234,7 @@ let formInfo = {
   text: '',
 };
 
-if(localStorage.formData) {
+if (localStorage.formData) {
   formInfo = JSON.parse(localStorage.formData);
   nameField.value = formInfo.name;
   emailField.value = formInfo.email;
