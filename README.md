@@ -27,12 +27,21 @@ git clone git@github.com:samWfelice/Portfolio.git
 - Twitter: [@samwfelice](https://twitter.com/samwfelice)
 - LinkedIn: [samfelice](https://www.linkedin.com/in/samfelice)
 
+## Contributors
+
+👤 **Nadia Levina**
+
+- GitHub: [@petushka1](https://github.com/petushka1)
+
 👤 **Patrick Ndimukulaga**
 
 - GitHub: [@kirabo19](https://github.com/kirabo19)
 - Twitter: [@Ndimuku](https://twitter.com/Ndimuku)
 - LinkedIn: [kapojames](https://linkedin.com/in/kapojames)
 
+👤 **Abel Desu**
+
+- GitHub: [@Abel-desu](https://github.com/Abel-desu)
 
 ## 🤝 Contributing
 
