@@ -65,6 +65,9 @@ const btn3 = document.getElementById('3');
 const userEmail = document.getElementById('userEmail');
 const emailRegex = /^[a-z]+@[^\s]+\.[^\s]+$/;
 const formBtn = document.querySelector('.form-btn');
+const nameField = document.getElementById('userName');
+const emailField = document.getElementById('userEmail');
+const textField = document.getElementById('userText');
 
 function toggleMenu() {
   document.querySelector('.mobile-nav-menu').classList.toggle('d-block');
@@ -224,3 +227,33 @@ formBtn.addEventListener('click', (e) => {
     e.preventDefault();
   }
 });
+
+let formInfo = {
+    name: '',
+    email: '',
+    text: '',
+  };
+
+  if(localStorage.formData) {
+    formInfo = JSON.parse(localStorage.formData);
+    nameField.value = formInfo.name;
+    emailField.value = formInfo.email;
+    textField.value = formInfo.text;
+  }
+  
+
+nameField.addEventListener('input', () => {
+  formInfo.name = nameField.value;
+  localStorage.setItem('formData', JSON.stringify(formInfo));
+})
+
+emailField.addEventListener('input', () => {
+  formInfo.email = emailField.value;
+  localStorage.setItem('formData', JSON.stringify(formInfo));
+})
+
+textField.addEventListener('input', () => {
+  formInfo.text = textField.value;
+  localStorage.setItem('formData', JSON.stringify(formInfo));
+})
+
