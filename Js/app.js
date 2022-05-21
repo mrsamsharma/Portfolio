@@ -110,8 +110,8 @@ function displayPopup(e) {
   canopy.textContent = data.subheading;
   popSubheading.appendChild(canopy);
   const grayMatter = document.createElement('span');
-  canopy.className = 'pop-gray-matter';
-  canopy.textContent = data.subheading2;
+  grayMatter.className = 'pop-gray-matter';
+  grayMatter.textContent = data.subheading2;
   popSubheading.appendChild(grayMatter);
   popContent.appendChild(popSubheading);
   const featuredImage = document.createElement('img');
