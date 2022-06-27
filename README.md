@@ -8,7 +8,7 @@
 - HTML
 - CSS
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://samwfelice.github.io/Portfolio/)
 
@@ -21,7 +21,7 @@ git clone git@github.com:samWfelice/Portfolio.git
 
 ## Authors
 
-👤 **Samuel Felice**
+👤 **Satyam Sharma**
 
 - GitHub: [@samWfelcie](https://github.com/samWfelice)
 - Twitter: [@samwfelice](https://twitter.com/samwfelice)
